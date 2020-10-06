@@ -6,7 +6,7 @@ module.exports = function () {
                     test: /\.(gif|png|jpe?g|svg)$/i,
                     exclude: [
                         /src\/img\/sprite\/.+\.svg$/,
-                        /dist\/assets\/img\/sprite\/.+\.svg$/,
+                        /docs\/img\/sprite\/.+\.svg$/,
                     ],
                     use: [
                         {
