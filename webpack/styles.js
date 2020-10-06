@@ -5,7 +5,7 @@ const autoprefixer = require('autoprefixer');
 module.exports = function () {
     return {
         plugins: [
-            new ExtractTextPlugin('assets/css/[name].css'),
+            new ExtractTextPlugin('css/[name].css'),
             new OptimizeCssAssetsPlugin({
                 assetNameRegExp: /\.css$/g,
                 cssProcessor: require('cssnano'),

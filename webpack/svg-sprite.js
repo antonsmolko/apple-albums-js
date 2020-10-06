@@ -18,7 +18,7 @@ module.exports = function () {
                             loader: 'svg-sprite-loader',
                             options: {
                                 extract: true,
-                                spriteFilename: svgPath => `assets/img/sprite/sprite${svgPath.substr(-4)}`
+                                spriteFilename: svgPath => `img/sprite/sprite${svgPath.substr(-4)}`
                             }
                         },
                         'svg-fill-loader',

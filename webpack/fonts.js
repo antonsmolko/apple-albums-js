@@ -11,7 +11,7 @@ module.exports = function () {
                             loader: 'file-loader',
                             options: {
                                 publicPath: '/',
-                                name: 'assets/[path][name].[ext]'
+                                name: '[path][name].[ext]'
                             }
                         }
                     ]

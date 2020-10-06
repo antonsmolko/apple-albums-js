@@ -1,10 +1,4 @@
-{
-    "albums" : [
-        { "width" : 0, "height" : 0, "size" : 2 },
-        { "width" : 0, "height" : 2, "size" : 1 },
-        { "width" : 0, "height" : 3, "size" : 1 },
-        { "width" : 0, "height" : 4, "size" : 2 },
-        { "width" : 0, "height" : 6, "size" : 1 },
-        { "width" : 1, "height" : 2, "size" : 1 }
-    ]
-}
+// {
+//     "someData" : [
+//     ]
+// }

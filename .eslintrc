@@ -9,7 +9,8 @@
         "clearTimeout" : true,
         "require" : true,
         "__dirname" : true,
-        "Promise" : true
+        "Promise" : true,
+        "module" : true
     },
     "rules": {
         "no-console": "off"

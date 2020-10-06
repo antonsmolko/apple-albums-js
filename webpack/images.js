@@ -13,7 +13,7 @@ module.exports = function () {
                             loader: 'file-loader',
                             options: {
                                 publicPath: '/',
-                                name: 'assets/[path][name].[ext]'
+                                name: '[path][name].[ext]'
                             },
                         },
                         {
@@ -37,8 +37,7 @@ module.exports = function () {
                                 // the webp option will enable WEBP
                                 webp: {
                                 quality: 75
-                                },
-                                
+                                }
                             }
                         },
                     ],

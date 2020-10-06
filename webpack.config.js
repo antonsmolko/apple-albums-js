@@ -24,13 +24,9 @@ const commonConfig = merge([
         },
 
         output: {
-            filename: 'assets/js/[name].js',
+            filename: 'js/[name].js',
             path: path.resolve(__dirname, 'dist'),
         },
-
-        devtool: 'source-map',
-
-        watch: true,
 
         plugins: [
             new webpack.optimize.SplitChunksPlugin({
@@ -38,7 +34,7 @@ const commonConfig = merge([
             }),
 
             ...pages.map(page => new HtmlWebpackPlugin({
-                filename: path.parse(page).name + '.html',
+                filename: '../' + path.parse(page).name + '.html',
                 chunks: ['main'],
                 template: './pug/pages/' + page
             })),
@@ -64,6 +60,9 @@ module.exports = function(env){
         ])
     }
     if(env === 'development'){
+        commonConfig.watch = true;
+        commonConfig.devtool = 'source-map';
+
         return merge([
             {mode: 'development'},
             commonConfig,
