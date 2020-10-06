@@ -25,7 +25,7 @@ const commonConfig = merge([
 
         output: {
             filename: 'js/[name].js',
-            path: path.resolve(__dirname, 'dist'),
+            path: path.resolve(__dirname, 'docs'),
         },
 
         plugins: [
@@ -34,7 +34,7 @@ const commonConfig = merge([
             }),
 
             ...pages.map(page => new HtmlWebpackPlugin({
-                filename: '../' + path.parse(page).name + '.html',
+                filename: path.parse(page).name + '.html',
                 chunks: ['main'],
                 template: './pug/pages/' + page
             })),
