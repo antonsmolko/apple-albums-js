@@ -1,0 +1,4 @@
+@import "./mixins";
+
+@include font-face("firasans", "../fonts/FiraSansLight/FiraSansLight", 300);
+@include font-face("firasans", "../fonts/FiraSansRegular/FiraSansRegular");

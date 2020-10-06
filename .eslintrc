@@ -1,0 +1,17 @@
+{
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "globals": {
+        "window" : true,
+        "document" : true,
+        "console" : true,
+        "setTimeout" : true,
+        "clearTimeout" : true,
+        "require" : true,
+        "__dirname" : true,
+        "Promise" : true
+    },
+    "rules": {
+        "no-console": "off"
+    }
+}
