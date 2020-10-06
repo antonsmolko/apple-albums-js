@@ -33,7 +33,7 @@ export default class Albums {
         console.log("window on blur");
       };
 
-      setTimeout(() => el.classList.add('start'));
+      setTimeout(() => el.classList.add('start'), 1500);
   }
 
   /**
